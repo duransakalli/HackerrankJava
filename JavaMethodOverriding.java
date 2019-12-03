@@ -1,4 +1,4 @@
-package Solutions;
+package java;
 
 class Sports {
 

@@ -1,4 +1,4 @@
-package Solutions;
+package java;
 
 public class WelcomeToJava {
 	 public static void main(String[] args) {
