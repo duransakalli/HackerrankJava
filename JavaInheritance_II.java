@@ -1,4 +1,4 @@
-package java;
+package Solutions;
 
 class Arithmetic {
 	public int add(int x, int y) {

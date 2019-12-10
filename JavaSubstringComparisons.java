@@ -1,4 +1,4 @@
-package java;
+package Solutions;
 
 public class JavaSubstringComparisons {
 

@@ -1,4 +1,4 @@
-package java;
+package Solutions;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

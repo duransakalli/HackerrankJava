@@ -1,4 +1,4 @@
-package java;
+package Solutions;
 
 class BiCycle {
 	String define_me() {
