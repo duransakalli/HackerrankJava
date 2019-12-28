@@ -5,11 +5,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-
-
-
-public class InsertANodeAtTheTailOfALinkedList {
-    static class SinglyLinkedListNode {
+public class InsertANodeAtTheHeadOfALinkedList {
+	static class SinglyLinkedListNode {
         public int data;
         public SinglyLinkedListNode next;
 
@@ -21,10 +18,13 @@ public class InsertANodeAtTheTailOfALinkedList {
 
     static class SinglyLinkedList {
         public SinglyLinkedListNode head;
+        public SinglyLinkedListNode tail;
 
         public SinglyLinkedList() {
             this.head = null;
+            this.tail = null;
         }
+
       
     }
 
@@ -40,25 +40,28 @@ public class InsertANodeAtTheTailOfALinkedList {
         }
     }
 
-    static SinglyLinkedListNode insertNodeAtTail(SinglyLinkedListNode head, int data) {
-    	SinglyLinkedListNode temp = new SinglyLinkedListNode(data); 
-    	temp.data = data; 
-    	temp.next = null;
+    // Complete the insertNodeAtHead function below.
 
-    	if(head == null) {
-    	    head = temp;
-    	    return head;
-    	} 
+    /*
+     * For your reference:
+     *
+     * SinglyLinkedListNode {
+     *     int data;
+     *     SinglyLinkedListNode next;
+     * }
+     *
+     */
+    static SinglyLinkedListNode insertNodeAtHead(SinglyLinkedListNode llist, int data) {
+    	
+    	
+    	
+    	
+        
 
-    	SinglyLinkedListNode current = head;
-    	while(current.next != null) {
-    	    current = current.next;
-    	}
-    	current.next = temp;
-    	return head;  	
-        	
     }
-	private static final Scanner scanner = new Scanner(System.in);
+
+    private static final Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
@@ -68,13 +71,12 @@ public class InsertANodeAtTheTailOfALinkedList {
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
         for (int i = 0; i < llistCount; i++) {
-          
             int llistItem = scanner.nextInt();
             scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+        	
+          SinglyLinkedListNode llist_head = insertNodeAtHead(llist.head, llistItem);
 
-          SinglyLinkedListNode llist_head = insertNodeAtTail(llist.head, llistItem);
           llist.head = llist_head;
-          
         }
 
 
